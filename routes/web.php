@@ -19,3 +19,6 @@ Route::get('/login', [AuthController::class, 'tampilLogin'])->name('login');
 Route::post('/login/submit', [AuthController::class, 'submitLogin'])->name('login.submit');
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('/kontak', [AuthController::class, 'kontak'])->name('kontak');
+Route::get('/Tentang', [AuthController::class, 'Tentang'])->name('Tentang');

@@ -50,4 +50,13 @@ class AuthController extends Controller
 
         return redirect()->route('login');
     }
+
+    public function kontak() {
+    return view('kontak');
 }
+
+    public function Tentang() {
+        return view('Tentang');
+    }
+}
+

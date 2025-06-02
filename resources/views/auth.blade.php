@@ -95,7 +95,7 @@
             input.type = input.type === "password" ? "text" : "password";
         }
 
-        const activeTab = '{{ session('tab', 'login') }}';
+        const activeTab = `{{ session('tab',  'login') }}`;
         const tabTrigger = document.querySelector(`#${activeTab}-tab`);
         if (tabTrigger) new bootstrap.Tab(tabTrigger).show();
     </script>
