@@ -4,9 +4,9 @@
 
         <!-- Column 1 -->
         <div class="md:col-span-3 mt-3">
-            <img src="img/Modern Public Book Library Logo.png" alt="Logo" class="w-1/2 mb-3">
+            <img src="{{ asset('img/logo barterin.png') }}" alt="Logo" class=" mb-3" style="width: 50px;">
             <p class="font-light text-lg mb-2 text-white/80">
-            Akira Website adalah platform digital modern untuk pencinta literasi.
+            Barterin Website adalah platform digital modern untuk para pelaku UMKM untuk menukar, mendonasikan produk.
             </p>
             <ul class="flex space-x-2 text-white/60 text-sm">
             <li class="flex items-center">
@@ -18,9 +18,9 @@
         <!-- Column 2 -->
         <div class="md:col-span-3 mt-3 md:pl-6">
             <h5 class="uppercase mb-4 font-bold text-white">Navigasi</h5>
-            <p><a href="#buku-terpopuler" class="hover:underline text-white/80">Buku Terpopuler</a></p>
-            <p><a href="#semua_buku" class="hover:underline text-white/80">Semua Buku</a></p>
-            <p><a href="#rekomendasi-buku" class="hover:underline text-white/80">Rekomendasi</a></p>
+            <p><a href="#buku-terpopuler" class="hover:underline text-white/80">Tukar/Tambah</a></p>
+            <p><a href="#semua_buku" class="hover:underline text-white/80">Produk Gratis</a></p>
+            <p><a href="#rekomendasi-buku" class="hover:underline text-white/80">Chat/Pesan</a></p>
         </div>
 
         <!-- Column 3 -->

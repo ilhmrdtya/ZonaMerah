@@ -13,7 +13,7 @@
     @include('navbar')
 
     <!-- Tentang -->
-    <section id="tentang-kami" class="bg-gray-100">
+    <section id="tentang-kami" class="mt-24 min-100vh max-100vh mx-2 md:mx-3 lg:mx-4 mb-2 md:mb-3 lg:mb-4 p-5">
     <div class="m-2 md:m-3 lg:m-3 ms-2 md:ms-3 lg:ms-4 me-2 md:me-3 lg:me-4 mb-2 md:mb-3 lg:mb-5 p-5">
         <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         
@@ -40,7 +40,7 @@
         <!-- Gambar -->
         <div class="flex justify-center lg:justify-end relative">
             <div class="relative max-w-[500px]">
-            <img src="img/Untitled design.png" alt="Tentang Akira" class="rounded-xl shadow-lg border-4 border-white -rotate-3">
+            <img src="{{ asset('img/kenapaBarterin.png') }}" alt="Tentang Akira" class="rounded-xl shadow-lg border-4 border-white -rotate-3">
 
             <!-- Decorative 1 -->
             <div class="absolute -top-3 -start-3">

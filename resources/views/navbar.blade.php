@@ -5,12 +5,12 @@
         <!-- <a href="#" class="flex items-center">
           <img class="h-10 w-auto" src="https://little-joy-studio.vercel.app/studio.png" width="999" height="999" alt="little joys studio" />
         </a> -->
-        <a href="/" class="flex items-center shrink-0">
-                <!-- <img class="w-10" height="100" width="100" src="https://tailwindflex.com/images/logo.svg" alt="Talwindflex logo"> -->
+        <a href="/" class="flex items-center shrink-0 ">
+                <img class="w-10 me-2" height="100" width="100" src="{{ asset('img/logo barterin.png') }}" alt="Barterin Logo" >
                 <span class="md:flex text-2xl mt-0.5 font-bold text-primary-600 text-white">
                    Barterin
                 </span>
-            </a>
+        </a>
     
         <!-- Desktop Menu Links -->
         <div class="hidden md:flex items-center md:gap-8 text-white">
@@ -21,10 +21,10 @@
           <a href="{{ route("pesan") }}" class="text-sm font-medium hover:text-purple-400 transition">Pesan ( Chat )</a>
           <a href="{{ route("kontak") }}" class="text-sm font-medium hover:text-purple-400 transition">Kontak</a>
             <div class="auth">
-          <a href="#contact" class="cursor-pointer me-2 rounded-full border-2 py-2 px-6 border-white bg-white text-purple-900 hover:bg-sky-600 hover:text-white hover:shadow-lg transition duration-300 ease-in-out">
+          <a href="{{ route('login') }}" class="cursor-pointer me-2 rounded-full border-2 py-2 px-6 border-white bg-white text-purple-900 hover:bg-sky-600 hover:text-white hover:shadow-lg transition duration-300 ease-in-out">
             Masuk
           </a>
-          <a href="#contact" class="cursor-pointer rounded-full border-2 py-2 px-6 border-white bg-white text-purple-900 hover:bg-fuchsia-600 hover:text-white hover:shadow-lg transition duration-300 ease-in-out">
+          <a href="{{ route('registrasi.tampil') }}" class="cursor-pointer rounded-full border-2 py-2 px-6 border-white bg-white text-purple-900 hover:bg-fuchsia-600 hover:text-white hover:shadow-lg transition duration-300 ease-in-out">
             Daftar
           </a>
             </div>

@@ -7,17 +7,18 @@
      <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body style="background-color: #F6F1F1;">
+<body class="min-h-screen flex flex-col">
 
     <!-- Navbar -->
     @include('navbar')
 
     <!-- kontak -->
-    <section id="kontak-kami" class="mx-2 md:mx-3 lg:mx-4 mb-2 md:mb-3 lg:mb-4 p-5 text-center">
+    <section id="kontak-kami" class="mt-24 min-100vh max-100vh mx-2 md:mx-3 lg:mx-4 mb-2 md:mb-3 lg:mb-4 p-5 text-center">
         <div class="flex flex-col md:flex-row justify-center items-center">
             
             <div class="w-full md:w-1/2 text-left mb-4 md:mb-0">
             <h1 class="font-bold mb-3 text-[#3F72AF] text-3xl md:text-4xl">Kontak Kami</h1>
+            <div class="border-b-4 border-[#3F72AF] my-3 w-[120px]"></div>
             <p class="text-base md:text-lg">
                 Kami di <strong>Akira Website</strong> selalu siap membantu Anda. Jika Anda memiliki pertanyaan seputar penggunaan platform, kendala teknis, permintaan informasi, atau ingin memberikan masukan dan saran, tim kami dengan senang hati akan mendengarkan dan memberikan solusi terbaik. <br><br>
 
@@ -31,7 +32,7 @@
             </div>
             
             <div class="w-full md:w-1/2 flex justify-center items-center">
-            <img src="img/section kontak.png" alt="Kontak" class="w-full max-w-full h-auto">
+            <img src="{{ asset('img/kenapaBarterin.png') }}" alt="Kontak" class="w-1/2 max-w-full h-auto">
             </div>
         </div>
     </section>
