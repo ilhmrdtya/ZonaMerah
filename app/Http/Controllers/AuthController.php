@@ -58,5 +58,20 @@ class AuthController extends Controller
     public function Tentang() {
         return view('Tentang');
     }
+
+    public function pesan()
+    {
+        return view('pesan'); // pastikan ada file resources/views/pesan.blade.php
+    }
+
+    public function tukar_tambah()
+    {
+        return view('tukar_tambah'); // pastikan ada file resources/views/tukar_tambah.blade.php
+    }
+
+    public function donasiProduk()
+    {
+        return view('donasiProduk'); // pastikan ada file resources/views/donasiProduk.blade.php
+    }
 }
 

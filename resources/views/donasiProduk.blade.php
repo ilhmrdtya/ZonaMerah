@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <title>Donasi Produk</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen">
+<body>
+    <!-- Navbar -->
+    @include('navbar')
+
     <div class="container mx-auto py-8">
         <h1 class="text-3xl font-bold mb-6 text-center">Donasi Produk</h1>
         <div class="max-w-2xl mx-auto bg-white rounded-lg shadow p-6">
@@ -46,5 +50,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    @include('footer')
 </body>
 </html>
