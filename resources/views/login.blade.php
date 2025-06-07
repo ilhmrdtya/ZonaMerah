@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <!-- React CDN -->
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -117,7 +114,7 @@
 
             <div class="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
                 <div class="absolute inset-0">
-                    <img class="object-cover object-top w-full h-full" src="{{ asset('img/image login.png') }}" alt="gambar login" />
+                    <img class="object-contain w-full h-full" src="{{ asset('img/image login.png') }}" alt="gambar login" />
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
 
@@ -163,59 +160,6 @@
             </div>
         </div>
     </section>
-
-
-    <!-- <div class="container">
-        <div class="row justify-content-center align-items-center min-vh-100">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-                <div class="card shadow p-4 border-0">
-                    <h4 class="text-center mb-4">Login</h4>
-
-                    {{-- Success Message --}}
-                    @if(session('success'))
-                    <div class="alert alert-success alert-dismissible fade show text-center" role="alert" id="successAlert">
-                        {{ session('success') }}
-                    </div>
-                    @endif
-
-                    {{-- Gagal Login Message --}}
-                    @if(session('GAGAL'))
-                    <div class="alert alert-danger text-center">{{ session('GAGAL') }}</div>
-                    @endif
-
-                    <form action="{{ route('login.submit') }}" method="POST">
-                        @csrf
-                        <div class="mb-3">
-                            <input type="email" name="email" class="form-control" placeholder="Email" required>
-                            @error('email')
-                            <small class="text-danger">{{ $message }}</small>
-                            @enderror
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="password" name="password" class="form-control" id="login-password" placeholder="Password" required>
-                            <div class="form-check mt-1">
-                                <input type="checkbox" class="form-check-input" onclick="togglePassword('login-password')"> Tampilkan Password
-                            </div>
-                            @error('password')
-                            <small class="text-danger">{{ $message }}</small>
-                            @enderror
-                        </div>
-
-                        <button type="submit" class="btn btn-primary w-100">Login</button>
-
-                        <div class="text-center mt-3">
-                            <small>Belum punya akun? <a href="{{ route('registrasi.tampil') }}">Register di sini</a></small>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="col-lg-5 d-none d-lg-block  h-64">
-                <img src="{{ asset('img/image login.png') }}" alt="Login Image" class="w-full h-full object-contain  rounded-3 shadow">
-            </div>
-        </div>
-    </div> -->
 
     {{-- Bootstrap JS --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
