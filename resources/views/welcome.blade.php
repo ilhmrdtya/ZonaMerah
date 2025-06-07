@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Barterin</title>
      <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
     <!-- FontAwesome CDN -->
@@ -236,21 +236,6 @@
                         <span class="text-yellow-400">&#9733;</span>
                     </div>
                 </div>
-            </div>
-            <!-- Feedback Form -->
-            <div class="mt-16 max-w-xl mx-auto bg-sky-50 rounded-xl shadow-lg p-8">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Kirim Feedback Anda</h3>
-                <form>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 mb-2" for="name">Nama</label>
-                        <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400" type="text" id="name" name="name" placeholder="Nama Anda">
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 mb-2" for="feedback">Feedback</label>
-                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400" id="feedback" name="feedback" rows="4" placeholder="Tulis feedback Anda..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg transition">Kirim</button>
-                </form>
             </div>
         </div>
     </section>

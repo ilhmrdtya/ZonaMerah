@@ -6,10 +6,7 @@
           <img class="h-10 w-auto" src="https://little-joy-studio.vercel.app/studio.png" width="999" height="999" alt="little joys studio" />
         </a> -->
         <a href="/" class="flex items-center shrink-0 ">
-                <img class="w-10 me-2" height="100" width="100" src="{{ asset('img/logo barterin.png') }}" alt="Barterin Logo" >
-                <span class="md:flex text-2xl mt-0.5 font-bold text-primary-600 text-white">
-                   Barterin
-                </span>
+                <img class="w-40" src="{{ asset('img/logo barterin.png') }}" alt="Barterin Logo" >
         </a>
     
         <!-- Desktop Menu Links -->
@@ -21,12 +18,24 @@
           <a href="{{ route("pesan") }}" class="text-sm font-medium hover:text-purple-400 transition">Pesan ( Chat )</a>
           <a href="{{ route("kontak") }}" class="text-sm font-medium hover:text-purple-400 transition">Kontak</a>
             <div class="auth">
-          <a href="{{ route('login') }}" class="cursor-pointer me-2 rounded-full border-2 py-2 px-6 border-white bg-white text-purple-900 hover:bg-sky-600 hover:text-white hover:shadow-lg transition duration-300 ease-in-out">
-            Masuk
-          </a>
-          <a href="{{ route('registrasi.tampil') }}" class="cursor-pointer rounded-full border-2 py-2 px-6 border-white bg-white text-purple-900 hover:bg-fuchsia-600 hover:text-white hover:shadow-lg transition duration-300 ease-in-out">
-            Daftar
-          </a>
+<div class="auth flex items-center gap-2">
+  @auth
+    <form method="POST" action="{{ route('logout') }}">
+      @csrf
+      <button type="submit" class="cursor-pointer rounded-full border-2 py-2 px-6 border-white bg-white text-purple-900 hover:bg-red-600 hover:text-white hover:shadow-lg transition duration-300 ease-in-out">
+        Logout
+      </button>
+    </form>
+  @else
+    <a href="{{ route('login') }}" class="cursor-pointer me-2 rounded-full border-2 py-2 px-6 border-white bg-white text-purple-900 hover:bg-sky-600 hover:text-white hover:shadow-lg transition duration-300 ease-in-out">
+      Masuk
+    </a>
+    <a href="{{ route('registrasi.tampil') }}" class="cursor-pointer rounded-full border-2 py-2 px-6 border-white bg-white text-purple-900 hover:bg-fuchsia-600 hover:text-white hover:shadow-lg transition duration-300 ease-in-out">
+      Daftar
+    </a>
+  @endauth
+</div>
+
             </div>
         </div>
     

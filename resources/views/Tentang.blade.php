@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Barterin</title>
      <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
 </head>
@@ -39,8 +39,8 @@
 
         <!-- Gambar -->
         <div class="flex justify-center lg:justify-end relative">
-            <div class="relative max-w-[500px]">
-            <img src="{{ asset('img/kenapaBarterin.png') }}" alt="Tentang Akira" class="rounded-xl shadow-lg border-4 border-white -rotate-3">
+            <div class="relative max-w-[900px]">
+            <img src="{{ asset('img/tentang.png') }}" alt="Tentang Akira" class="rounded-xl shadow-lg border-4 border-white -rotate-3 transform hover:scale-105 transition duration-500">
 
             <!-- Decorative 1 -->
             <div class="absolute -top-3 -start-3">

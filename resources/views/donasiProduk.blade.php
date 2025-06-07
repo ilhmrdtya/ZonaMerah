@@ -11,44 +11,34 @@
     <!-- Navbar -->
     @include('navbar')
 
-    <div class="container mx-auto py-8">
-        <h1 class="text-3xl font-bold mb-6 text-center">Donasi Produk</h1>
-        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow p-6">
-            <!-- Chat Section -->
-            <div class="mb-6">
-                <div class="flex flex-col space-y-4 max-h-64 overflow-y-auto" id="chat-messages">
-                    <!-- Contoh pesan -->
-                    <div class="flex items-start">
-                        <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg max-w-xs">
-                            Halo, saya ingin berdonasi produk makanan.
-                        </div>
-                    </div>
-                    <div class="flex items-end justify-end">
-                        <div class="bg-green-100 text-green-800 px-4 py-2 rounded-lg max-w-xs">
-                            Terima kasih! Silakan klik tombol "Inginkan" jika Anda ingin produk ini.
-                        </div>
-                    </div>
-                </div>
-                <form class="mt-4 flex" id="chat-form">
-                    <input type="text" class="flex-1 border rounded-l-lg px-4 py-2 focus:outline-none" placeholder="Ketik pesan..." />
-                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600">Kirim</button>
-                </form>
-            </div>
-            <!-- Produk Section -->
-            <div class="border-t pt-6">
-                <div class="flex items-center space-x-4">
-                    <img src="https://via.placeholder.com/80" alt="Produk" class="w-20 h-20 rounded object-cover">
-                    <div>
-                        <h2 class="text-xl font-semibold">Nama Produk</h2>
-                        <p class="text-gray-600">Deskripsi singkat produk yang didonasikan.</p>
-                        <div class="mt-2 flex space-x-2">
-                            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Inginkan</button>
-                            <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Selengkapnya</button>
+    <!-- main content -->
+    <div id="tukar_Tambah" class="mt-24 min-100vh max-100vh mx-2 md:mx-3 lg:mx-4 mb-2 md:mb-3 lg:mb-4 p-5">
+
+        <div class="flex align-end justify-end">
+            <button class="bg-pink-500  p-4 text-white rounded-lg hover:bg-pink-600 hover:shadow-lg">Lihat Produk</button>
+            <button class="bg-blue-500 ms-4 p-4 text-white rounded-xl hover:bg-blue-600 hover:shadow-lg">Tambah Produk</button>
+        </div>
+
+        <div class="produk mt-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="{{ asset('img/image Registrasi.png') }}" alt="Produk 2" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Nama Produk</h3>
+                        <h4 class="text-gray-700 mb-2 text-orange-500">Status : Gratis</h4>
+                        <p class="text-gray-600 mb-4 flex-1">Deskripsi singkat produk yang bisa ditukar atau ditambah.</p>
+                        <div class="flex gap-2 mt-4">
+                            <a href="#" class="flex-1 inline-block text-center bg-sky-600 hover:bg-sky-700 text-white font-semibold py-2 px-4 rounded-full transition">Negosiasi</a>
+                            <a href="#" class="flex-1 inline-block text-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full transition">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
+
+
     </div>
 
     <!-- Footer -->

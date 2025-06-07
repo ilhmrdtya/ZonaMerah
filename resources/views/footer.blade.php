@@ -4,7 +4,7 @@
 
         <!-- Column 1 -->
         <div class="md:col-span-3 mt-3">
-            <img src="{{ asset('img/logo barterin.png') }}" alt="Logo" class=" mb-3" style="width: 50px;">
+            <img src="{{ asset('img/logo barterin.png') }}" alt="Logo" class="w-64  mb-3">
             <p class="font-light text-lg mb-2 text-white/80">
             Barterin Website adalah platform digital modern untuk para pelaku UMKM untuk menukar, mendonasikan produk.
             </p>

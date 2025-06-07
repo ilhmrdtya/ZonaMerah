@@ -37,7 +37,7 @@ class AuthController extends Controller
 
         if (Auth::attempt($data)) {
             $request->session()->regenerate();
-            return redirect()->intended('/dashboard');
+            return redirect()->intended('/welcome');
         } else {
             return redirect()->route('login')->with('GAGAL', 'Email atau Password anda salah...');
         }
@@ -72,6 +72,11 @@ class AuthController extends Controller
     public function donasiProduk()
     {
         return view('donasiProduk'); // pastikan ada file resources/views/donasiProduk.blade.php
+    }
+
+    public function welcome()
+    {
+        return view('welcome'); // pastikan ada file resources/views/welcome.blade.php
     }
 }
 
