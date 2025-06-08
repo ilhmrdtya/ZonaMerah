@@ -26,3 +26,5 @@ Route::get('/pesan', [AuthController::class, 'pesan'])->name('pesan');
 Route::get('tukar_tambah', [AuthController::class, 'tukar_tambah'])->name('tukar_tambah');
 Route::get('/donasiProduk', [AuthController::class, 'donasiProduk'])->name('donasiProduk');
 Route::get('/welcome', [AuthController::class, 'welcome'])->name('welcome');
+
+Route::get('/message', [AuthController::class, 'message'])->name('message');

@@ -78,5 +78,10 @@ class AuthController extends Controller
     {
         return view('welcome'); // pastikan ada file resources/views/welcome.blade.php
     }
+
+    public function message()
+    {
+        return view('message'); // pastikan ada file resources/views/message.blade.php
+    }
 }
 

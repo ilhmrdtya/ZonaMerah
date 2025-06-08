@@ -37,11 +37,11 @@
 
                     <!-- Icon Message dengan teks muncul saat hover -->
                     <div class="relative group ml-2">
-                    <button class="text-pink-200 hover:text-white transition-colors" title="Lanjut ke Chat">
+                    <a href="{{ route('message') }}" class="text-pink-200 hover:text-white transition-colors" title="Lanjut ke Chat">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.77 9.77 0 01-4-.8L3 21l1.8-4A7.963 7.963 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                         </svg>
-                    </button>
+                    </a>
                     <span class="absolute top-full left-1/2 -translate-x-1/2 mt-1 px-2 py-1 text-xs text-white bg-pink-700 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                         Message
                     </span>
@@ -58,8 +58,10 @@
                         Tolak
                     </button>
                 </div>
-            </div>   
+            </div>
+   
         </div>
+    </div>    
 
     <!-- Footer -->
     @include('footer')

@@ -13,13 +13,12 @@
     />
 
 </head>
-<body style="background-color: #F6F1F1;">
+<body>
     <!-- Navbar -->
      @include('navbar')
 
     <!-- Hero Section -->
-    <section class="w-full flex items-center justify-center min-h-screen overflow-hidden bg-gradient-to-b from-[#0f0f0f] to-[#F6F1F1]">
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <section class="hero w-full flex items-center justify-center min-h-screen overflow-hidden" style="background-image: url('{{ asset('img/hero.png') }}'); background-size: cover; background-position: center;">
     
       <!-- Content -->
       <div class="relative z-10 container mx-auto px-4 text-center text-white">
