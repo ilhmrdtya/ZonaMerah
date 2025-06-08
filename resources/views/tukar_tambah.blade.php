@@ -30,7 +30,7 @@
 
         <!-- Tombol -->
         <div id="tombol-tambah" class="flex align-end justify-end">
-            <button class="bg-pink-500  p-4 text-white rounded-lg hover:bg-pink-600 hover:shadow-lg">Lihat Produk</button>
+            <button class="bg-pink-500  p-4 text-white rounded-lg hover:bg-pink-600 hover:shadow-lg"><a href="{{ route('Lihatproduk') }}">Lihat Produk</a></button>
             <button onclick="showForm()" class="bg-blue-500 ms-4 p-4 text-white rounded-xl hover:bg-blue-600 hover:shadow-lg">Tambah Produk</button>
         </div>
         
