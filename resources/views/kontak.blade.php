@@ -7,6 +7,8 @@
     <title>Barterin</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+     <!-- Bootstrap Icons CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body class="min-h-screen flex flex-col">
@@ -28,7 +30,7 @@
                         </span>
                     </h1>
                     <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
-                        Kami di <span class="font-semibold text-[#3F72AF]">Akira Website</span> selalu siap membantu Anda. Jika Anda memiliki pertanyaan seputar penggunaan platform, kendala teknis, permintaan informasi, atau ingin memberikan masukan dan saran, tim kami dengan senang hati akan mendengarkan dan memberikan solusi terbaik.
+                        Kami di <span class="font-semibold text-[#3F72AF]">Barterin Website</span> selalu siap membantu Anda. Jika Anda memiliki pertanyaan seputar penggunaan platform, kendala teknis, permintaan informasi, atau ingin memberikan masukan dan saran, tim kami dengan senang hati akan mendengarkan dan memberikan solusi terbaik.
                     </p>
                     
                     <p class="text-lg md:text-xl text-gray-700 leading-relaxed">

@@ -15,8 +15,8 @@
 
             <div class="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
                 <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">Sign in to Celebration</h2>
-                    <p class="mt-2 text-base text-gray-600">Don't have an account? <a href="{{ route('registrasi.tampil') }}" title="" class="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">Create a free account</a></p>
+                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">Login</h2>
+                    <p class="mt-2 text-base text-gray-600">Silahkan Isi Disini untuk Login</p>
 
                     {{-- Success Message --}}
                     @if(session('success'))
@@ -114,13 +114,13 @@
 
             <div class="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
                 <div class="absolute inset-0">
-                    <img class="object-contain w-full h-full" src="{{ asset('img/image login.png') }}" alt="gambar login" />
+                    <img class="object-cover w-full h-full" src="{{ asset('img/image login.png') }}" alt="Ilustrasi Login Barterin" />
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
 
                 <div class="relative">
                     <div class="w-full max-w-xl xl:w-full xl:mx-auto xl:pr-24 xl:max-w-xl">
-                        <h3 class="text-4xl font-bold text-white">Join 35k+ web professionals & <br class="hidden xl:block" />build your website</h3>
+                        <h3 class="text-4xl font-bold text-white">Gabung dengan 10.000+ anggota <br class="hidden xl:block" />dan mulai bertukar sekarang</h3>
                         <ul class="grid grid-cols-1 mt-10 sm:grid-cols-2 gap-x-8 gap-y-4">
                             <li class="flex items-center space-x-3">
                                 <div class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
@@ -128,7 +128,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                     </svg>
                                 </div>
-                                <span class="text-lg font-medium text-white"> Commercial License </span>
+                                <span class="text-lg font-medium text-white">Akses ke ribuan produk</span>
                             </li>
                             <li class="flex items-center space-x-3">
                                 <div class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
@@ -136,7 +136,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                     </svg>
                                 </div>
-                                <span class="text-lg font-medium text-white"> Unlimited Exports </span>
+                                <span class="text-lg font-medium text-white">Sistem tukar yang mudah</span>
                             </li>
                             <li class="flex items-center space-x-3">
                                 <div class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
@@ -144,7 +144,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                     </svg>
                                 </div>
-                                <span class="text-lg font-medium text-white"> 120+ Coded Blocks </span>
+                                <span class="text-lg font-medium text-white">Donasi produk gratis</span>
                             </li>
                             <li class="flex items-center space-x-3">
                                 <div class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
@@ -152,7 +152,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                     </svg>
                                 </div>
-                                <span class="text-lg font-medium text-white"> Design Files Included </span>
+                                <span class="text-lg font-medium text-white">Komunitas yang terpercaya</span>
                             </li>
                         </ul>
                     </div>
