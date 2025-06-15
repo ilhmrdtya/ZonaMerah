@@ -225,8 +225,8 @@
         <div class="flex items-start gap-4 mb-4 p-4 bg-white/80 rounded-xl">
             <i class="bi bi-people text-3xl text-gray-700"></i>
             <div>
-            <h4 class="text-xl font-bold text-gray-800">Komunitas Aktif</h4>
-            <p class="text-gray-700">Terhubung dengan ribuan pengguna lain untuk barter barang secara aman dan terpercaya.</p>
+            <h4 class="text-xl font-bold text-gray-800">Pelaku UMKM Aktif</h4>
+            <p class="text-gray-700">Terhubung dengan ribuan pelaku pengguna lain untuk barter barang secara aman dan terpercaya.</p>
             </div>
         </div>
         
