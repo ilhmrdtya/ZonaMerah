@@ -18,7 +18,7 @@
      @include('navbar')
 
     <!-- Hero Section -->
-    <section class="hero w-full flex items-center justify-center min-h-screen overflow-hidden" style="background-image: url('{{ asset('img/hero.png') }}'); background-size: cover; background-position: center;">
+    <section class="hero w-full flex items-center justify-center min-h-screen overflow-hidden" style="background-image: url('{{ asset('img/Hero section (2).png') }}'); background-size: cover; background-position: center;">
     
       <!-- Content -->
       <div class="relative z-10 container mx-auto px-4 text-center text-white">
