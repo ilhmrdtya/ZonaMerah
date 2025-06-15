@@ -244,51 +244,58 @@
     </section>
 
 
-    <!-- feedbeck -->
+    <!-- Feedback Section -->
     <section id="feedback" class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Feedback Pengguna</h2>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Apa Kata Mereka?</h2>
+                <div class="w-20 h-1 bg-sky-500 mx-auto"></div>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Feedback Card 1 -->
-                <div class="bg-sky-50 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 1" class="w-20 h-20 rounded-full mb-4 shadow">
-                    <h3 class="font-semibold text-lg text-gray-800 mb-2">Andi Pratama</h3>
-                    <p class="text-gray-600 mb-4">"Barterin sangat membantu saya menukar barang yang sudah tidak terpakai. Prosesnya mudah dan komunitasnya ramah!"</p>
-                    <div class="flex space-x-1">
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9733;</span>
+                <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Andi" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Andi Pratama</h4>
+                            <p class="text-sm text-gray-500">Pengguna Barterin</p>
+                        </div>
                     </div>
+                    <p class="text-gray-600 italic">"Sistem tukar tambahnya praktis banget. Barang yang udah nggak kepake jadi berguna lagi."</p>
                 </div>
+
                 <!-- Feedback Card 2 -->
-                <div class="bg-sky-50 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 2" class="w-20 h-20 rounded-full mb-4 shadow">
-                    <h3 class="font-semibold text-lg text-gray-800 mb-2">Siti Rahma</h3>
-                    <p class="text-gray-600 mb-4">"Saya mendapatkan banyak barang gratis yang masih bagus. Sangat direkomendasikan untuk yang ingin hidup hemat."</p>
-                    <div class="flex space-x-1">
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9734;</span>
+                <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Siti" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Siti Rahma</h4>
+                            <p class="text-sm text-gray-500">Donatur Produk</p>
+                        </div>
                     </div>
+                    <p class="text-gray-600 italic">"Seneng bisa berbagi lewat Barterin. Barang yang masih layak pakai nggak jadi mubazir."</p>
                 </div>
+
                 <!-- Feedback Card 3 -->
-                <div class="bg-sky-50 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
-                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="User 3" class="w-20 h-20 rounded-full mb-4 shadow">
-                    <h3 class="font-semibold text-lg text-gray-800 mb-2">Budi Santoso</h3>
-                    <p class="text-gray-600 mb-4">"Konsep barter dan gratisnya sangat inovatif. Saya bisa menukar barang tanpa ribet dan tanpa biaya tambahan."</p>
-                    <div class="flex space-x-1">
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9733;</span>
-                        <span class="text-yellow-400">&#9733;</span>
+                <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Budi" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Budi Santoso</h4>
+                            <p class="text-sm text-gray-500">Pelaku UMKM</p>
+                        </div>
                     </div>
+                    <p class="text-gray-600 italic">"Platform ini membantu saya memperluas jaringan dan mengurangi stok barang."</p>
                 </div>
             </div>
+
         </div>
     </section>
 
