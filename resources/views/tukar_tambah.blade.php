@@ -25,8 +25,6 @@
 
     <!-- Main Content -->
     <div id="tukar_Tambah" class="mt-24 min-100vh max-100vh mx-2 md:mx-3 lg:mx-4 mb-2 md:mb-3 lg:mb-4 p-5">
-        <h1 class="text-3xl font-bold text text-center mb-6">Tukar/Tambah Produk</h1>
-        <div class="mx-auto border-b-4 border-[#3F72AF] my-3 w-[220px]"></div>
 
         <!-- Tombol -->
         <div id="tombol-tambah" class="flex align-end justify-end">

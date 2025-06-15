@@ -6,8 +6,10 @@
     <title>Barterin</title>
      <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body style="background-color: #F6F1F1;">
+<body>
 
     <!-- Navbar -->
     @include('navbar')
@@ -17,37 +19,31 @@
     <div class="m-2 md:m-3 lg:m-3 ms-2 md:ms-3 lg:ms-4 me-2 md:me-3 lg:me-4 mb-2 md:mb-3 lg:mb-5 p-5">
         <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         
-        <!-- Teks -->
-        <div>
-            <div class="lg:pr-10">
-            <h1 class="text-4xl font-bold text-[#3F72AF] mb-4">
-                Tentang Kami
-                <div class="border-b-4 border-[#3F72AF] my-3 w-[120px]"></div>
-            </h1>
-            <p class="text-lg font-normal text-gray-800 mb-4">
-                <span class="font-bold text-[#3F72AF]">Akira</span> adalah platform digital yang dirancang untuk memudahkan siapa saja dalam menjelajahi dunia literasi.
-            </p>
-            <p class="text-lg text-gray-700">
-                Kami menyediakan akses ke ribuan buku dari berbagai genre—mulai dari fiksi, nonfiksi, edukasi, hingga referensi teknologi terkini. Akira hadir untuk mendukung kebiasaan membaca masyarakat Indonesia, khususnya pelajar dan generasi muda. Kami percaya bahwa membaca adalah langkah awal menuju perubahan besar.
-            </p>
-            <button class="flex items-center mt-6 p-3 rounded-full shadow bg-[#3F72AF] hover:bg-[#355f93] transition">
-                <i class="bi bi-book text-white text-2xl me-3"></i>
-                <span class="text-white font-semibold text-base">Temukan dunia literasi tanpa batas</span>
-            </button>
-            </div>
-        </div>
+<!-- Teks Tentang Kami -->
+<div>
+    <div class="lg:pr-10">
+        <h1 class="text-4xl font-bold text-[#3F72AF] mb-4">
+            Tentang Kami
+            <div class="border-b-4 border-[#3F72AF] my-3 w-[120px]"></div>
+        </h1>
+        <p class="text-lg font-normal text-gray-800 mb-4">
+            <span class="font-bold text-[#3F72AF]">Barterin</span> adalah platform digital yang dirancang untuk memudahkan pertukaran dan donasi produk antar pengguna.
+        </p>
+        <p class="text-lg text-gray-700">
+            Kami menyediakan wadah bagi masyarakat untuk saling bertukar barang yang sudah tidak terpakai atau mendonasikan produk yang masih layak pakai. Barterin hadir untuk mendukung ekonomi sirkular dan mengurangi limbah dengan memaksimalkan penggunaan produk. Kami percaya bahwa setiap barang memiliki nilai dan bisa bermanfaat bagi orang lain.
+        </p>
+        <button class="flex items-center mt-6 p-3 rounded-full shadow bg-[#3F72AF] hover:bg-[#355f93] transition">
+            <i class="bi bi-arrow-repeat text-white text-2xl me-3"></i>
+            <span class="text-white font-semibold text-base">Mulai Bertukar Sekarang</span>
+        </button>
+    </div>
+</div>
 
         <!-- Gambar -->
         <div class="flex justify-center lg:justify-end relative">
             <div class="relative max-w-[900px]">
-            <img src="{{ asset('img/tentang.png') }}" alt="Tentang Akira" class="rounded-xl shadow-lg border-4 border-white -rotate-3 transform hover:scale-105 transition duration-500">
+            <img src="{{ asset('img/tentang.png') }}" alt="Tentang Akira" class="rounded-xl shadow-2xl border-4 border-white -rotate-2 transform hover:scale-105 transition duration-500">
 
-            <!-- Decorative 1 -->
-            <div class="absolute -top-3 -start-3">
-                <div class="bg-[#3F72AF] p-3 rounded-full shadow opacity-90">
-                <i class="bi bi-bookmark-star-fill text-white text-xl"></i>
-                </div>
-            </div>
 
             <!-- Decorative 2 -->
             <div class="absolute -bottom-3 -end-3">
