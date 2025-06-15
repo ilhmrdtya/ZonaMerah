@@ -19,12 +19,12 @@
 
 
         <div class="Pesan flex flex-col gap-3 m-10 bg-blue-200 p-6 rounded-lg shadow-lg">
-            <div class="bg-gradient-to-r from-pink-500 to-pink-600 w-full flex justify-between items-center p-4 rounded-xl shadow-lg mb-4 border border-pink-300">
+            <div class="bg-gradient-to-r from-sky-500 to-sky-600 w-full flex justify-between items-center p-4 rounded-xl shadow-lg mb-4 border border-blue-300">
                 <!-- Bagian Kiri: Konten Penawaran + Icon Message -->
                 <div class="flex items-start gap-3">
                     <!-- Icon Tawar-menawar -->
-                    <div class="bg-pink-100 p-2 rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="bg-blue-100 p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
@@ -42,21 +42,71 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.77 9.77 0 01-4-.8L3 21l1.8-4A7.963 7.963 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                         </svg>
                     </a>
-                    <span class="absolute top-full left-1/2 -translate-x-1/2 mt-1 px-2 py-1 text-xs text-white bg-pink-700 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <span class="absolute top-full left-1/2 -translate-x-1/2 mt-1 px-2 py-1 text-xs text-white bg-blue-700 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                         Message
                     </span>
                     </div>
 
                 </div>
+                
+
+
 
                 <!-- Bagian Kanan: Aksi -->
                 <div class="flex gap-2">
-                    <button class="bg-white text-pink-600 px-4 py-2 rounded-lg font-medium hover:bg-pink-50 transition-colors shadow-sm">
-                        Terima
+                    <button class="bg-white text-blue-600 px-4 py-2 rounded-lg font-medium hover:bg-pink-50 transition-colors shadow-sm">
+                        Terima 
                     </button>
-                    <button class="bg-pink-800 text-white px-4 py-2 rounded-lg font-medium hover:bg-pink-900 transition-colors shadow-sm">
+                    <button class=" bg-blue-800 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-900 transition-colors shadow-sm">
                         Tolak
                     </button>
+                    <!-- <button class="d-none bg-blue-800 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-900 transition-colors shadow-sm">
+                        Selesai
+                    </button> -->
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-sky-500 to-sky-600 w-full flex justify-between items-center p-4 rounded-xl shadow-lg mb-4 border border-blue-300">
+                <!-- Bagian Kiri: Konten Penawaran + Icon Message -->
+                <div class="flex items-start gap-3">
+                    <!-- Icon Tawar-menawar -->
+                    <div class="bg-blue-100 p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    
+                    <!-- Teks Penawaran -->
+                    <div class="flex-1">
+                        <p class="text-white font-semibold">Pino menawar produk Anda</p>
+                        <p class="text-pink-100 text-sm">"Judul Produk"</p>
+                    </div>
+
+                    <!-- Icon Message dengan teks muncul saat hover -->
+                    <div class="relative group ml-2">
+                    <a href="{{ route('message') }}" class="text-pink-200 hover:text-white transition-colors" title="Lanjut ke Chat">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.77 9.77 0 01-4-.8L3 21l1.8-4A7.963 7.963 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </a>
+                    <span class="absolute top-full left-1/2 -translate-x-1/2 mt-1 px-2 py-1 text-xs text-white bg-blue-700 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                        Message
+                    </span>
+                    </div>
+
+                </div>
+                
+
+
+
+                <!-- Bagian Kanan: Aksi -->
+                <div class="flex gap-2">
+                    <button class="bg-white text-blue-600 px-4 py-2 rounded-lg font-medium hover:bg-pink-50 transition-colors shadow-sm">
+                        Pending 
+                    </button>
+                    <!-- <button class="d-none bg-blue-800 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-900 transition-colors shadow-sm">
+                        Selesai
+                    </button> -->
                 </div>
             </div>
    
