@@ -44,3 +44,11 @@ Route::get('/products/{id}', [ProductController::class, 'show'])->name('products
 
     Route::get('/tukar-tambah', [ProductController::class, 'tukar_tambah']);
 Route::get('/donasiproduk', [ProductController::class, 'donasiProduk']);
+
+Route::delete('/products/{product}', [ProductController::class, 'destroy'])
+    ->name('products.destroy');
+
+    Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->name('products.edit');
+
+Route::get('/LihatProduk', [ProductController::class, 'Lihatproduk'])->name('Lihatproduk');
+

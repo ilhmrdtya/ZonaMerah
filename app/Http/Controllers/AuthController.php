@@ -91,12 +91,24 @@ public function donasiProduk()
         return view('message'); // pastikan ada file resources/views/message.blade.php
     }
 
-    public function Lihatproduk()
-    {
-        return view('Lihatproduk');
-    }
 
+public function Lihatproduk()
+{
+    $products = Product::paginate(10); // pastikan ada model Product
+    return view('Lihatproduk', compact('products'));
+}
 
+public function update(Request $request, Product $product)
+{
+    $validated = $request->validate([
+        'title' => 'required|string|max:255',
+        // tambahkan validasi lainnya
+    ]);
+    
+    $product->update($validated);
+    
+    return redirect()->route('LihatProduk')->with('success', 'Produk berhasil diupdate');
+}
 
 }
 

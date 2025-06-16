@@ -38,37 +38,53 @@ class ProductController extends Controller
         return redirect()->back()->with('success', 'Produk berhasil disimpan!');
     }
 
-    public function edit(Product $product)
-    {
-        $this->authorize('update', $product);
-        return view('products.form', compact('product'));
+public function edit(Product $product)
+{
+    return view('products.edit', ['product' => $product]);
+}
+
+
+public function update(Request $request, Product $product)
+{
+    $validated = $request->validate([
+        'title' => 'required|string|max:255',
+        'description' => 'required|string',
+        'type' => 'required|in:free,Ditukar,DiTambah',
+        'price' => 'required|numeric',
+        'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+    ]);
+
+    if ($request->hasFile('image')) {
+        // Hapus gambar lama jika ada
+        if ($product->image) {
+            Storage::delete('public/'.$product->image);
+        }
+        // Simpan gambar baru
+        $validated['image'] = $request->file('image')->store('products', 'public');
     }
 
-    public function update(Request $request, Product $product)
-    {
-        $this->authorize('update', $product);
+    $product->update($validated);
 
-        $validated = $this->validateProduct($request, $product);
+    return redirect()->route('Lihatproduk')->with('success', 'Produk berhasil diupdate');
+}
 
-        // Handle file upload if new image is provided
-        if ($request->hasFile('image')) {
-            // Delete old image if exists
-            if ($product->image) {
-                Storage::disk('public')->delete($product->image);
-            }
-            
-            $validated['image'] = $request->file('image')->store('products', 'public');
+    public function destroy(Product $product)
+{
+    try {
+        // Hapus file gambar jika ada
+        if ($product->image && Storage::exists('public/' . $product->image)) {
+            Storage::delete('public/' . $product->image);
         }
-
-        // Set price to null if product is FREE
-        if ($request->type === 'FREE') {
-            $validated['price'] = null;
-        }
-
-        $product->update($validated);
-
-        return redirect()->route('products.index')->with('success', 'Produk berhasil diperbarui!');
+        
+        $product->delete();
+        
+        return redirect()->route('lihat.produk')
+            ->with('success', 'Produk berhasil dihapus');
+    } catch (\Exception $e) {
+        return redirect()->back()
+            ->with('error', 'Gagal menghapus produk: ' . $e->getMessage());
     }
+}
 
     public function show($id) {
     $product = Product::findOrFail($id);
@@ -86,4 +102,12 @@ class ProductController extends Controller
             'price' => $request->type !== 'FREE' ? 'required|numeric|min:0' : 'nullable|numeric|min:0'
         ]);
     }
+
+public function Lihatproduk()
+{
+    $products = Product::paginate(10); // atau ->all() jika tidak paginate
+    return view('Lihatproduk', compact('products')); // ⬅️ ini yang penting
+}
+
+
 }
