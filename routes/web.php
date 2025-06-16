@@ -6,6 +6,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\SuplierController;
 use App\Http\Controllers\PembeliController;
+use App\Http\Controllers\ProductController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,3 +34,13 @@ Route::get('/Lihatproduk', [AuthController::class, 'Lihatproduk'])->name('Lihatp
 Route::get('/produk/{id}', function ($id) {
     return view('produk.detail');
 });
+
+// Route::resource('/products', ProductController::class);
+Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
+    Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
+    Route::post('/products', [ProductController::class, 'store'])->name('products.store');
+    Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->name('products.edit');
+    Route::put('/products/{product}', [ProductController::class, 'update'])->name('products.update');
+
+    Route::get('/tukar-tambah', [ProductController::class, 'tukar_tambah']);
+Route::get('/donasiproduk', [ProductController::class, 'donasiProduk']);

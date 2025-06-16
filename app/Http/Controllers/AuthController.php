@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -64,15 +65,21 @@ class AuthController extends Controller
         return view('pesan'); // pastikan ada file resources/views/pesan.blade.php
     }
 
-    public function tukar_tambah()
-    {
-        return view('tukar_tambah'); // pastikan ada file resources/views/tukar_tambah.blade.php
-    }
 
-    public function donasiProduk()
-    {
-        return view('donasiProduk'); // pastikan ada file resources/views/donasiProduk.blade.php
-    }
+  // Untuk produk tukar/tambah
+public function tukar_tambah()
+{
+    $products = Product::whereIn('type', ['Ditukar', 'diTambah'])->get();
+    return view('tukar_tambah', compact('products'));
+}
+
+// Untuk produk free (halaman terpisah)
+public function donasiProduk()
+{
+    $products = Product::where('type', 'FREE')->get();
+    return view('donasiproduk', compact('products'));
+}
+
 
     public function welcome()
     {
@@ -88,5 +95,9 @@ class AuthController extends Controller
     {
         return view('Lihatproduk');
     }
+
+
+
 }
+
 
