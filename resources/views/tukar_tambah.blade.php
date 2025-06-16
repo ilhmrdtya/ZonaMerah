@@ -21,9 +21,9 @@
     </script>
 
 </head>
-
+  
 <body>
-    <!-- Navbar -->
+    <!-- Navbar --> 
     @include('navbar')
 
     <!-- Main Content -->
