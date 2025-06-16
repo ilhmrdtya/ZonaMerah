@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FontAwesome CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- js -->
     <script>
         function showForm() {
             document.getElementById('form-produk').classList.remove('hidden');
-            document.getElementById('produk-list').classList.add('hidden');
+            document.getElementById('produk').classList.add('hidden');
             document.getElementById('tombol-tambah').classList.add('hidden');
         }
         function hideForm() {
             document.getElementById('form-produk').classList.add('hidden');
-            document.getElementById('produk-list').classList.remove('hidden');
+            document.getElementById('produk').classList.remove('hidden');
             document.getElementById('tombol-tambah').classList.remove('hidden');
         }
     </script>
@@ -35,7 +40,6 @@
             <button onclick="showForm()" class="bg-blue-500 ms-4 p-4 text-white rounded-xl hover:bg-blue-600 hover:shadow-lg">Tambah Produk</button>
         </div>
 
-
         <!-- Form Tambah Produk -->
         <div id="form-produk" class="max-w-lg mx-auto mt-8 bg-white p-8 rounded-xl shadow hidden">
             <h2 class="text-2xl font-bold mb-6 text-gray-800">Tukar/Tambah Produk</h2>
@@ -47,7 +51,7 @@
                         <label class="flex flex-col w-full h-32 border-2 border-dashed border-gray-300 hover:border-blue-400 rounded-lg cursor-pointer">
                             <div class="flex flex-col items-center justify-center pt-7">
                                 <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
-                                <p class="text-sm text-gray-500">Unggah maksimal 3 foto</p>
+                                <p class="text-sm text-gray-500">Unggah maksimal 1 foto</p>
                             </div>
                             <input type="file" class="hidden" multiple accept="image/*">
                         </label>
@@ -81,7 +85,7 @@
         <!-- Akhir Form Tambah Produk -->
 
         <!-- content -->
-        <div class="produk mt-12">
+        <div id="produk" class="produk mt-12">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <div class="group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">

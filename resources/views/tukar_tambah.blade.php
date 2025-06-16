@@ -6,6 +6,7 @@
     <title>Tukar/Tambah Produk</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script>
         function showForm() {
             document.getElementById('form-produk').classList.remove('hidden');
@@ -45,7 +46,7 @@
                         <label class="flex flex-col w-full h-32 border-2 border-dashed border-gray-300 hover:border-blue-400 rounded-lg cursor-pointer">
                             <div class="flex flex-col items-center justify-center pt-7">
                                 <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
-                                <p class="text-sm text-gray-500">Unggah maksimal 3 foto</p>
+                                <p class="text-sm text-gray-500">Unggah maksimal 1 foto</p>
                             </div>
                             <input type="file" class="hidden" multiple accept="image/*">
                         </label>
