@@ -36,8 +36,21 @@
         
         <!-- Form Tambah Produk -->
         <div id="form-produk" class="max-w-lg mx-auto mt-8 bg-white p-8 rounded-xl shadow hidden">
-            <h2 class="text-2xl font-bold mb-6 text-gray-800">Form Tambah Produk</h2>
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Tukar/Tambah Produk</h2>
             <form>
+                <!-- Upload Gambar -->
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-medium mb-2">Foto Produk*</label>
+                    <div class="flex items-center justify-center w-full">
+                        <label class="flex flex-col w-full h-32 border-2 border-dashed border-gray-300 hover:border-blue-400 rounded-lg cursor-pointer">
+                            <div class="flex flex-col items-center justify-center pt-7">
+                                <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
+                                <p class="text-sm text-gray-500">Unggah maksimal 3 foto</p>
+                            </div>
+                            <input type="file" class="hidden" multiple accept="image/*">
+                        </label>
+                    </div>
+                </div>
                 <div class="mb-4">
                     <label for="nama_produk" class="block text-gray-700 font-semibold mb-2">Nama Produk</label>
                     <input type="text" id="nama_produk" name="nama_produk" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Masukkan nama produk">
@@ -50,9 +63,13 @@
                     <label for="status" class="block text-gray-700 font-semibold mb-2">Status Produk</label>
                     <select id="status" name="status" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
                         <option value="">Pilih status</option>
-                        <option value="Di Tukar Tambahkan">Di Tukar Tambahkan</option>
-                        <option value="Tersedia">Tersedia</option>
+                        <option value="Di Tukar Tambahkan">Tukar</option>
+                        <option value="Tersedia">Tambah</option>
                     </select>
+                </div>
+                <div class="mb-4">
+                    <label for="deskripsi" class="block text-gray-700 font-semibold mb-2">Harga</label>
+                    <input type="number" id="harga" name="harga" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Masukkan harga produk">
                 </div>
                 <div class="flex gap-2">
                     <button type="submit" class="flex-1 bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition">Simpan Produk</button>

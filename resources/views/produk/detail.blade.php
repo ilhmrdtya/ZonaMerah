@@ -15,10 +15,15 @@
             <div class="flex-1 bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
                 <img src="{{ asset('img/image Registrasi.png') }}" alt="Produk GLOW#29" class="w-full max-w-md h-80 object-cover rounded-xl mb-6">
                 <div class="w-full">
-                    <h2 class="text-2xl font-bold text-yellow-400 mb-2">GLOW#29</h2>
-                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Nama Produk: Kamera Mirrorless Sony A6000</h3>
+                    <h1 class="text-xl font-semibold text-gray-700 mb-2">Kamera Mirrorless Sony A6000</h1>
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 rounded-full bg-gray-200 mr-3 overflow-hidden">
+                                <img src="#" alt="Seller" class="w-full h-full object-cover">
+                            </div>
+                            <span class="text-sm text-gray-600">Budi Store</span>
+                        </div>
                     <span class="inline-block bg-orange-200 text-orange-700 text-xs px-3 py-1 rounded mb-3">
-                        Status: Di Tukar Tambahkan
+                        Status: Tambah
                     </span>
                 </div>
             </div>
@@ -33,32 +38,7 @@
                         </span>
                         <div>
                             <div class="font-bold text-gray-700 text-sm">Status</div>
-                            <div class="text-gray-500 text-sm">Di Tukar Tambahkan</div>
-                        </div>
-                    </div>
-                    <div class="flex items-center mb-4">
-                        <span class="w-8 h-8 flex items-center justify-center rounded-full bg-green-100 mr-3">
-                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M12 8v4l3 3"></path>
-                            </svg>
-                        </span>
-                        <div>
-                            <div class="font-bold text-gray-700 text-sm">Kondisi</div>
-                            <div class="text-gray-500 text-sm">Like New, 99%</div>
-                        </div>
-                    </div>
-                    <div class="flex items-center mb-4">
-                        <span class="w-8 h-8 flex items-center justify-center rounded-full bg-purple-100 mr-3">
-                            <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path d="M17 20h5v-2a3 3 0 00-5.356-1.857"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M17 20H7a2 2 0 01-2-2v-5a2 2 0 012-2h10a2 2 0 012 2v5a2 2 0 01-2 2z"></path>
-                            </svg>
-                        </span>
-                        <div>
-                            <div class="font-bold text-gray-700 text-sm">Kapasitas Stok</div>
-                            <div class="text-gray-500 text-sm">3 Unit</div>
+                            <div class="text-gray-500 text-sm">Tambah</div>
                         </div>
                     </div>
                     <div class="flex items-center mb-4">
@@ -70,7 +50,7 @@
                         </span>
                         <div>
                             <div class="font-bold text-gray-700 text-sm">Garansi</div>
-                            <div class="text-gray-500 text-sm">Masih berlaku 5 bulan</div>
+                            <div class="text-gray-500 text-sm">Masih berlaku 1 bulan</div>
                         </div>
                     </div>
                     <div class="flex items-center mb-4">
@@ -82,22 +62,11 @@
                         </span>
                         <div>
                             <div class="font-bold text-gray-700 text-sm">Biaya</div>
-                            <div class="text-green-600 font-bold text-lg">GRATIS</div>
+                            <div class="text-green-600 font-bold text-lg">RP. 0</div>
                         </div>
                     </div>
                 </div>
                 <div class="border-t pt-4">
-                    <div class="flex items-center mb-2">
-                        <span class="w-8 h-8 flex items-center justify-center rounded-full bg-indigo-100 mr-3">
-                            <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path d="M21 10.5a8.38 8.38 0 01-.9 3.8A8.5 8.5 0 113 10.5"></path>
-                            </svg>
-                        </span>
-                        <div>
-                            <div class="font-bold text-gray-700 text-sm">Brand</div>
-                            <div class="text-gray-500 text-sm">Sony</div>
-                        </div>
-                    </div>
                     <div class="flex items-center">
                         <span class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 mr-3">
                             <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -106,7 +75,7 @@
                         </span>
                         <div>
                             <div class="font-bold text-gray-700 text-sm">Kategori</div>
-                            <div class="text-gray-500 text-sm">Kamera Mirrorless</div>
+                            <div class="text-gray-500 text-sm">Kamera Mirrorless Sony A6000</div>
                         </div>
                     </div>
                 </div>
